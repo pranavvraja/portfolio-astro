@@ -4,11 +4,7 @@
 <header class="container">
   <div class="header-left">
     <a href="/" class="profile">
-      <img
-        src="/Untitled.png"
-        alt="Profile Image Of Pranavv Raja"
-        class="image"
-      />
+      <img src="/Untitled.png" alt="Profile Image Of Pranavv Raja" class="image"/>
       <span class="name">Pranavv Raja</span>
     </a>
   </div>
@@ -45,13 +41,14 @@
     font-family: fantasy;
     font-weight: 500;
     display: flex;
-    color: gray;
-    &:hover {
-      text-decoration: none;
-      color: white;
-      .image {
-        filter: brightness(125%);
-      }
+    color: darkgray;
+  }
+  .profile:hover {
+    text-decoration: none;
+    color: rgb(5, 49, 95);
+    transition: all 250ms ease-in-out;
+    .image {
+      filter: brightness(150%);
     }
   }
 
@@ -67,7 +64,7 @@
 
 a{
   text-decoration: none;
-  color: gray;
+  color: darkgray;
 }
 
   .nav-list {
@@ -82,20 +79,18 @@ a{
   .nav-item {
     padding: 5px 12px;
     font-size: var(--font-size-lg);
-    color: silver;
+    color: gray;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
     font-weight: 500;
     transition: all 250ms ease-in-out;
-    &:hover {
-      text-decoration: none;
-      color: var(--color-mint-300);
-      text-shadow: 0px 2px 18px rgb(0 255 137 / 80%);
-    }
-    &.active {
-      text-shadow: 0px 5px 10px rgb(0 255 137 / 90%);
-    }
   }
-
+  .nav-item:hover {
+    text-decoration: none;
+    color: rgb(5, 49, 95);
+    text-shadow: 0px 2px 18px rgb(5 49 95 / 80%);
+  }
+  
+  
   @media screen and (max-width: 980px) {
     .nav-item {
       font-size: var(--font-size-2xl);
@@ -105,4 +100,4 @@ a{
       }
     }
   }
-</style>
+  </style>

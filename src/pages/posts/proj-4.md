@@ -1,10 +1,11 @@
 ---
 layout: ../../layouts/proj-layout.astro
-title: 'Project-1'
+title: 'FOSS Website To Astro'
 pubDate: 2022-05-23
-description: 'My first project'
+description: 'The same FOSS website being converted to Astro'
 tags: ["html","project"]
-link: 'https://www.github.com'
+
+status: 'Ongoing'
 ---
 
 Details of the project

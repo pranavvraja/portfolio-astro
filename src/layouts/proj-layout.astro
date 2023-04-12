@@ -5,6 +5,7 @@ const {frontmatter} = Astro.props;
 <div class="box">
 <div class="container">
   <h1>{frontmatter.title}</h1>
+  <p><b>{frontmatter.status}</b></p>
   <p>{frontmatter.description}</p>
   <slot/>
   <a href={frontmatter.link} class="btn">View Source Code</a>
@@ -28,10 +29,10 @@ const {frontmatter} = Astro.props;
     }
 
     .btn{
-        background: rgb(5, 49, 95);
-        border: none;
+        background: #fff;
+        border: 0.1rem solid rgb(5, 49, 95);
         border-radius: 0.3rem;
-        color: #fff;
+        color: rgb(5, 49, 95);
         cursor: pointer;
         display: inline-block;
         font-size: 1rem;
@@ -39,6 +40,13 @@ const {frontmatter} = Astro.props;
         padding: 0.5rem 1rem;
         text-decoration: none;
         transition: all 0.2s ease-in-out;
+        
+    }
+    .btn:hover {
+        background: rgb(5, 49, 95);
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+        transform: translateY(-0.2rem);
+        color: #fff;
     }
 
 </style>
