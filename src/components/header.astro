@@ -1,58 +1,60 @@
 ---
-
 ---
 
 <header class="container">
-    <div class="header-left">
-        <a href="/" class="profile">
-            <img src="/Untitled.png" alt='Profile Image Of Pranavv Raja' class="image"/>
-            <span class="name">Pranavv Raja</span>
-        </a>
-    </div>
+  <div class="header-left">
+    <a href="/" class="profile">
+      <img
+        src="/Untitled.png"
+        alt="Profile Image Of Pranavv Raja"
+        class="image"
+      />
+      <span class="name">Pranavv Raja</span>
+    </a>
+  </div>
 
-    <div class="header-right">
-        <nav class="navi">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="/about.astro" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/projects.astro" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/contact.astro" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    
+  <div class="header-right">
+    <nav class="navi">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="/about.astro" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="/projects.astro" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="/contact.astro" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <style>
-    header{
-        width: 100%;
-        padding-top: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+  header {
+    width: 100%;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .profile{
-        align-items:center;
-        text-decoration: none;
-        font-weight: 500;
-        display: flex;
-        color: var(--color-silver-100);
-        &:hover {
-            text-decoration: none;
-            color: white;
-            .image {
-                filter: brightness(125%);
-            }
-        }
+  .profile {
+    align-items: center;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    color: var(--color-silver-100);
+    &:hover {
+      text-decoration: none;
+      color: white;
+      .image {
+        filter: brightness(125%);
+      }
     }
+  }
 
-    .image {
+  .image {
     border-radius: 50%;
     width: 40px;
   }
@@ -62,16 +64,19 @@
     font-size: 18px;
   }
 
-    .nav-list {
-        padding: 0;
-        display: inline-flex;
-        align-items: center;
-        column-gap: 1.55rem;
-        list-style-type: none;
-    }
-    
-    
-    .nav-item{
+ul{
+  list-style-type: none;
+}
+
+  .nav-list {
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 1.55rem;
+    list-style-type: none;
+  }
+
+  .nav-item {
     padding: 5px 12px;
     font-size: var(--font-size-lg);
     color: var(--color-silver-100);
@@ -81,7 +86,7 @@
     &:hover {
       text-decoration: none;
       color: var(--color-mint-300);
-      text-shadow: 0px 2px 18px rgb(0 255 137 / 80%)
+      text-shadow: 0px 2px 18px rgb(0 255 137 / 80%);
     }
     &.active {
       text-shadow: 0px 5px 10px rgb(0 255 137 / 90%);
@@ -89,7 +94,7 @@
   }
 
   @media screen and (max-width: 980px) {
-    .nav-item{
+    .nav-item {
       font-size: var(--font-size-2xl);
       font-weight: 600;
       &.active {
