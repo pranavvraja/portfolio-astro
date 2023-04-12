@@ -1,25 +1,78 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import Social from "../components/social.astro";
 
-
+const title = "Contact Me";
 ---
 
-<Layout title="Pranavv Raja">
-	<main>
-		<h1>Pranavv Raja</h1>
-	</main>
+<Layout title={title}>
+  <main>
+    <div class="soc">
+      <h1>{title}</h1>
+      <p>
+        <ul>
+          <li>
+			  <a href="mailto:22j35.pranavv@sjec.ac.in">
+            <img src="apple.png" class="logo" />
+            <span> You can contact me at <b>22j35.pranavv@sjec.ac.in</b></span></a
+            >
+          </li>
+          <li>
+            <Social platform="Github" username="pranavvraja">
+              <img src="Github.png" class="logo" /> <span
+                > You can find my repositories on <b>GitHub</b>.</span
+              >
+            </Social>
+          </li>
+
+          <li>
+            <Social platform="LinkedIn" username="pranavvraja">
+              <img src="linkedin.png" class="logo" /><span> View my <b>LinkedIn</b> profile.</span>
+            </Social>
+          </li>
+          <li>
+            <Social platform="Twitter" username="pranavvraja">
+              <img src="twitter.png" class="logo" /><span> Follow me on <b>Twitter</b>.</span>
+            </Social>
+          </li>
+        </ul>
+      </p>
+    </div>
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: 1rem;
-		padding: 1rem;
-		max-width: 100vh;
-		max-height: 100vh;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
+  main {
+    margin: 1rem;
+    padding: 1rem;
+	/*max-width: 100vh;
+    max-height: 100vh;*/
+  }
+  
+  a{
+        padding: 3px 10px;
+        width: 20px;
+        color: black;
+        background-color: none;
+        text-decoration: none;
+    }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+.soc{
+	text-align: left;
+	align-items: center;
+}
+  
+
+  .logo {
+    width: 30px;
+  }
+  ul {
+    list-style-type: none;
+    align-items: center;
+  }
 </style>
