@@ -1,12 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
+import ProjLayout from '../layouts/proj-layout.astro';
 const title = 'Projects'
+const items = await Astro.glob('../pages/posts/*.md');
 ---
 
 <Layout title={title}>
 	<main>
 		<h1>{title}</h1>
+		{items.map(item => (
+			<item.Content />
+		))}
 	</main>
 </Layout>
 
@@ -14,8 +18,8 @@ const title = 'Projects'
 	main {
 		margin: 1rem;
 		padding: 1rem;
-		max-width: 100vh;
-		max-height: 100vh;
+		/*max-width: 100vh;
+		max-height: 100vh;*/
 	}
 	h1 {
 		font-size: 3rem;

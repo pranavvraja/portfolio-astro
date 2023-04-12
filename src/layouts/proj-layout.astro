@@ -1,0 +1,44 @@
+---
+
+const {frontmatter} = Astro.props;
+---
+<div class="box">
+<div class="container">
+  <h1>{frontmatter.title}</h1>
+  <p>{frontmatter.description}</p>
+  <slot/>
+  <a href={frontmatter.link} class="btn">View Source Code</a>
+</div>
+</div>
+
+<style>
+    .container {
+        background: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+        padding: 3rem;
+        width: 80%;
+
+    }
+
+    .box {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    .btn{
+        background: rgb(5, 49, 95);
+        border: none;
+        border-radius: 0.3rem;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+</style>
