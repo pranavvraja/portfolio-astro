@@ -68,7 +68,7 @@ import Social from "./social.astro";
 
   .soc {
     padding: 0;
-    column-gap: 10px;
+    column-gap: 8px;
     align-items: center;
     display: inline-block;
     align-content: center;
@@ -103,4 +103,19 @@ import Social from "./social.astro";
     letter-spacing: .5ch;
     bottom: 0%;
   }
+
+  @media (max-width: 600px) {
+    .cr {
+      font-size: 0.7rem;
+    }
+    .logo {
+      width: 20px;
+      padding: 0%;
+    }
+    .soc{
+      column-gap: 5px;
+      padding: 0%;
+    }
+  }
+
 </style>
