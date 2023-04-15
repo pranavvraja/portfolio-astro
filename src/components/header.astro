@@ -4,7 +4,11 @@
 <header class="container">
   <div class="header-left">
     <a href="/" class="profile">
-      <img src="/Untitled.png" alt="Profile Image Of Pranavv Raja" class="image"/>
+      <img
+        src="/Untitled.png"
+        alt="Profile Image Of Pranavv Raja"
+        class="image"
+      />
       <span class="name"><b>Pranavv Raja</b></span>
     </a>
   </div>
@@ -24,6 +28,10 @@
       </ul>
     </nav>
   </div>
+
+  <button class="hb">
+    <img src="/menu.png" class="hb-img" />
+  </button>
 </header>
 
 <style>
@@ -43,7 +51,6 @@
     display: flex;
     color: darkgray;
     padding-left: 20px;
-    
   }
   .profile:hover {
     text-decoration: none;
@@ -54,52 +61,96 @@
       filter: brightness(150%);
     }
   }
-  
+
   .image {
     border-radius: 50%;
     width: 40px;
   }
-  
+
   .name {
     margin-left: 0.75rem;
     font-size: larger;
     font-weight: 400;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
   }
-  
-  
-  a{
-    text-decoration: none;
-  color: darkgray;
-}
 
-  .nav-list {
+  a {
+    text-decoration: none;
+    color: darkgray;
+  }
+
+  .hb {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .hb-img {
+    width: 40px;
+  }
+
+  @media screen and (max-width: 980px) {
+    .hb {
+      display: block;
+    }
+
+    .nav-list {
+      animation: fadeIn ease-in-out 500ms;
+      display: none;
+    }
+    .nav-list-open {
+      display: flex;
+      position: absolute;
+      left: 0;
+      top: 70px;
+      height: 100vh;
+      flex-direction: column;
+      row-gap: 1.75rem;
+      width: 100%;
+      z-index: 5;
+      padding: 15px;
+      margin: 0;
+      background: rgb(3 31 72 / 90%);
+      padding: 2.5rem 0;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .nav-item {
     padding: 0;
     display: inline-flex;
     align-items: center;
     column-gap: 1.55rem;
     list-style-type: none;
-    
   }
-  
-  .nav-item {
+
+  .nav-link {
     padding: 5px 12px;
     font-size: large;
     color: rgb(202, 202, 202);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
     font-weight: 600;
     transition: all 250ms ease-in-out;
     font-size: x-large;
   }
-  .nav-item:hover {
+  .nav-link:hover {
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-shadow: 0px 2px 18px rgba(255, 255, 255, 0.8);
   }
-  
-  
+
   @media screen and (max-width: 980px) {
-    .nav-item {
+    .nav-link {
       font-size: x-large;
       font-weight: 600;
       &.active {
@@ -107,4 +158,4 @@
       }
     }
   }
-  </style>
+</style>
