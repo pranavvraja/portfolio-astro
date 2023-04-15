@@ -5,7 +5,7 @@
   <div class="header-left">
     <a href="/" class="profile">
       <img src="/Untitled.png" alt="Profile Image Of Pranavv Raja" class="image"/>
-      <span class="name">Pranavv Raja</span>
+      <span class="name"><b>Pranavv Raja</b></span>
     </a>
   </div>
 
@@ -52,19 +52,22 @@
       filter: brightness(150%);
     }
   }
-
+  
   .image {
     border-radius: 50%;
     width: 40px;
   }
-
+  
   .name {
     margin-left: 0.75rem;
-    font-size: 18px;
+    font-size: larger;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
   }
-
-a{
-  text-decoration: none;
+  
+  
+  a{
+    text-decoration: none;
   color: darkgray;
 }
 
@@ -79,11 +82,12 @@ a{
   
   .nav-item {
     padding: 5px 12px;
-    font-size: var(--font-size-lg);
+    font-size: large;
     color: rgb(202, 202, 202);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    font-weight: 500;
+    font-weight: 600;
     transition: all 250ms ease-in-out;
+    font-size: x-large;
   }
   .nav-item:hover {
     text-decoration: none;
@@ -94,7 +98,7 @@ a{
   
   @media screen and (max-width: 980px) {
     .nav-item {
-      font-size: var(--font-size-2xl);
+      font-size: x-large;
       font-weight: 600;
       &.active {
         text-shadow: 0px 2px 18px rgb(0 255 137 / 80%);

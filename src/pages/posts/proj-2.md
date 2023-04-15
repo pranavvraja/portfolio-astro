@@ -11,6 +11,6 @@ status: 'Completed'
 Details of the project
 
 <h3>Languages used:</h3>
-<img src="/html.png" width=50px>
-<img src="/css.png" width=50px>
-<img src="/js.png" width=50px>
+<img src="/html.png" width=45px>
+<img src="/css.png" width=45px>
+<img src="/js.png" width=45px>

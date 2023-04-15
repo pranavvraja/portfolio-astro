@@ -11,4 +11,6 @@ status: 'Ongoing'
 Details of the project
 
 <h3>Languages used:</h3>
-<img src="/astro-icon-light.svg" width=50px>
+<img src="/astro-icon-light.svg" width=35px padding=3px>
+<img src="/html.png" width=45px>
+<img src="/css.png" width=45px>

@@ -11,5 +11,5 @@ status: 'Ongoing'
 Details of the project
 
 
-<h3>Languages used:</h3>
-<img src="/astro-icon-light.svg" width=50px> 
+<h3>Technologies used:</h3>
+<img src="/astro-icon-light.svg" width=45px> 
