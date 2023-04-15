@@ -16,7 +16,7 @@ const {frontmatter} = Astro.props;
     .container {
         background: #2a2828a8;
         border-radius: 1rem;
-        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 1rem rgba(208, 205, 205, 0.168);
         padding: 3rem;
         width: 90%;
         font-weight: 600;
@@ -25,8 +25,21 @@ const {frontmatter} = Astro.props;
     .box {
         display: flex;
         justify-content: center;
-        padding: 1.5rem;
+        padding: 1rem;
+        padding-top: 2rem;
         color: azure;
+    }
+
+    @media (max-width: 600px) {
+        .container {
+            width: 100%;
+            padding: 1.5rem;
+        }
+        .box {
+            padding: 0.7rem;
+            padding-top: 1rem;
+            width: 100%;
+        }
     }
 
     .btn{
