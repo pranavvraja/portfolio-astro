@@ -29,9 +29,7 @@
     </nav>
   </div>
 
-  <button class="hb">
-    <img src="/menu.png" class="hb-img" />
-  </button>
+
 </header>
 
 <style>
@@ -80,25 +78,13 @@
     color: darkgray;
   }
 
-  .hb {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  .hb-img {
-    width: 40px;
-  }
 
   @media screen and (max-width: 980px) {
-    .hb {
-      display: block;
-    }
+
 
     .nav-list {
       animation: fadeIn ease-in-out 500ms;
-      display: none;
+      
     }
     .nav-list-open {
       display: flex;
@@ -112,7 +98,7 @@
       z-index: 5;
       padding: 15px;
       margin: 0;
-      background: rgb(3 31 72 / 90%);
+      
       padding: 2.5rem 0;
     }
   }
@@ -149,13 +135,10 @@
     text-shadow: 0px 2px 18px rgba(255, 255, 255, 0.8);
   }
 
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 600px) {
     .nav-link {
-      font-size: x-large;
-      font-weight: 600;
-      &.active {
-        text-shadow: 0px 2px 18px rgb(0 255 137 / 80%);
-      }
+      font-size: large;
+      font-weight: 500;
     }
   }
 </style>
