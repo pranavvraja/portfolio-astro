@@ -11,6 +11,8 @@ const {frontmatter} = Astro.props;
   <p><a href={frontmatter.link} class="btn">View Source Code</a></p>
 </div>
 </div>
+<div class="blank">
+</div>
 
 <style>
     .container {
@@ -67,6 +69,10 @@ const {frontmatter} = Astro.props;
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
         transform: translateY(-0.2rem);
         color: #fff;
+    }
+    .blank{
+        padding: 1rem;
+        margin: 1rem;
     }
 
 </style>
