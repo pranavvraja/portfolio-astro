@@ -59,22 +59,26 @@ import Social from "./social.astro";
     font-family: monospace;
     font-size: 1rem;
     align-items: center;
+    animation: fadeIn ease-in-out 500ms;
     padding: 2px;
     padding-left: 20px;
     margin-top: 0%;
     column-gap: 0rem;
     color: azure;
+    transition: all 150ms ease-in-out;
   }
 
   .soc {
+    animation: fadeIn ease-in-out 500ms;
     padding: 0;
     column-gap: 8px;
     align-items: center;
     display: inline-block;
     align-content: center;
   }
-
+  
   .logo {
+    transition: all 250ms ease-in-out;
     width: 30px;
   }
 
@@ -115,6 +119,15 @@ import Social from "./social.astro";
     .soc{
       column-gap: 5px;
       padding: 0%;
+    }
+  
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
 
