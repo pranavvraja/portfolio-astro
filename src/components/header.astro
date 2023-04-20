@@ -48,7 +48,8 @@
     font-weight: 500;
     display: flex;
     color: darkgray;
-    padding-left: 20px;
+    padding: 10px;
+    margin-left: 10px;
   }
   .profile:hover {
     text-decoration: none;
@@ -76,7 +77,23 @@
   a {
     text-decoration: none;
     color: darkgray;
+    position: relative;
   }
+  a::before {
+  background: hsl(257, 100%, 19%);
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
 
 
   @media screen and (max-width: 980px) {
@@ -112,7 +129,7 @@
     }
   }
   .nav-item {
-    padding: 0;
+    padding: 2px;
     display: inline-flex;
     align-items: center;
     column-gap: 1.55rem;
