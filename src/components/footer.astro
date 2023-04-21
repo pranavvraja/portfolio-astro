@@ -40,7 +40,7 @@ import Social from "./social.astro";
     bottom: 0;
     position: absolute;
     margin-bottom: 0%;
-    padding: 0%;
+    padding: 10px;
     
   }
 
@@ -94,16 +94,22 @@ import Social from "./social.astro";
     transform: scale(1.3);
   }
   @media (max-width: 600px) {
+    footer{
+      padding: 4px;
+    }
     .cr {
       font-size: 0.7rem;
+      padding-left: 0px;
     }
     .logo {
-      width: 20px;
+      width: 25px;
       padding: 0%;
     }
     .soc{
-      column-gap: 5px;
+      column-gap: 4px;
       padding: 0%;
+      display: flex;
+      flex-direction: row;
     }
   
   }
