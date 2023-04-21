@@ -1,38 +1,69 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
-const title = 'About';
+const title = "About";
 ---
 
 <Layout title={title}>
-	<main>
-		<h1>Hello There!</h1>
-		<p>I'm Pranavv, pursuing engineering in the branch of Computer Science in India. </p>
-		<p>I'm still in my learning phase and would love to explore and implement new technologies in my projects.
-		<br>
-		I'm familiar with <b>HTML, CSS, C++, Java, Git</b> and <b>Github</b>. I'm currently learning <b>Astro</b>.
-		</p>
-	</main>
+  <main>
+    <div class="container">
+      <div class="text">
+        <h1>Hello There!</h1>
+        <p>
+          I'm Pranavv, pursuing engineering in the branch of Computer Science in
+          India.
+        </p>
+        <p>
+          I'm still in my learning phase and would love to explore and implement
+          new technologies in my projects.
+          <br />
+          I'm familiar with <b>HTML, CSS, C++, Java, Git</b> and <b>Github</b>.
+          I'm currently learning <b>Astro</b>.
+        </p>
+      </div>
+      <div class="image">
+        <img src="/picofme.png" alt="Pranavv" />
+      </div>
+    </div>
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: 1rem;
-		padding: 1rem;
-		max-width: 100vh;
-		max-height: 100vh;
-	}
-	p{
-		font-size: 1.2rem;
-		color: silver;
-		font-weight: 550;
-		transition: 250ms;
-	}
-	b{
-		color: white;
-	}
-	h1{
-		font-size: 2.7rem;
-	}
-	
+  main {
+    margin: 1rem;
+    padding: 1rem;
+    max-height: 100vh;
+  }
+  p {
+    line-height: 40px;
+    font-size: 1.2rem;
+    color: silver;
+    font-weight: 550;
+    transition: 250ms;
+  }
+  b {
+    color: white;
+  }
+  h1 {
+    font-size: 2.7rem;
+  }
+  img {
+    width: 300px;
+  }
+  .container {
+    display: inline-flex;
+    align-items: left;
+    justify-content: space-between;
+  }
+  .text {
+    padding-right: 20px;
+    text-align: justify;
+    width: 40%;
+    float: left;
+  }
+  .image {
+    float: right;
+    justify-content: right;
+    padding-top: 60px;
+  }
 </style>
