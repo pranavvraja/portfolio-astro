@@ -24,14 +24,18 @@ const {frontmatter} = Astro.props;
         font-weight: 600;
         transition: all 250ms ease-in-out;
     }
+
+    .container:hover{
+        transform: scale(1.02);
+    }
     
     .box {
         transition: all 150ms ease-in-out;
         display: flex;
         justify-content: center;
         padding: 1rem;
-        padding-top: 2rem;
         color: azure;
+
     }
 
     @media (max-width: 600px) {
