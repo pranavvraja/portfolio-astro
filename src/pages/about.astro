@@ -61,10 +61,44 @@ const title = "About";
     text-align: justify;
     width: 40%;
     float: left;
+	transition: 250ms ease-in-out;
   }
   .image {
     float: right;
     justify-content: right;
     padding-top: 60px;
+	transition: 250ms ease-in-out;
+  
   }
+
+  @media (max-width: 810px) {
+	main{
+		padding: 20px 20px;
+	}
+	.container {
+	  display: block;
+	}
+	.text {
+	  width: 100%;
+	  padding-right: 0;
+	  float: none;
+	}
+	.image {
+	  padding-top: 0;
+	  float: none;
+	  padding-left: 80px;
+	  justify-content:space-between;
+	}
+	img {
+	  width: 200px;
+  }
+  p{
+	line-height: 25px;
+	font-size: 1rem;
+	font-weight:500;
+  }
+  h1{
+	font-size: 2.3rem;
+  }
+}
 </style>
