@@ -1,122 +1,158 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
-const title = 'Pranavv Raja';
+const title = "Pranavv Raja";
 ---
 
 <Layout title={title}>
-	<main>
-		<div class="container">
-		<div class="text">
-		<p>Welcome, this is </p>
-		<h1>{title}</h1>
-		<p class="line-1">Computer Science Student.</p>
-		<p class="line-2">Front End Web Developer.</p>
-		</div>
-		<div class="image">
-		<img src="/pic1.png" width="400px">
-		</div>
-		</div>
-	</main>
+  <main>
+    <div class="container">
+      <div class="text">
+        <p>Welcome, this is</p>
+        <h1>{title}</h1>
+        <p class="line-1">Computer Science Student.</p>
+        <p class="line-2">Front End Web Developer.</p>
+      </div>
+      <div class="image">
+        <img src="/pic1.png" width="400px" />
+      </div>
+    </div>
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: 0rem 1rem;
-		padding: 30px 50px;
-		max-height: 100vh;
+  main {
+    margin: 0rem 1rem;
+    padding: 30px 50px;
+    max-height: 100vh;
 
-		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	}
-	p {
-		font-size: 1.2rem;
-		color: darkgray;
-		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-		font-weight: 525;
-		margin-bottom: 0px;
-		transition: all 250ms ease-in-out;
-	}
-	.intro{
-		letter-spacing: 1.5px;
-		font-size: 1.5rem;
-	}
-	h1{
-		font-size: 3.5rem;
-		font-weight: 900;
-		margin-top: 0px;
-		transition: all 250ms ease-in-out;
-	}
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+  p {
+    font-size: 1.2rem;
+    color: darkgray;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-weight: 525;
+    margin-bottom: 0px;
+    transition: all 250ms ease-in-out;
+  }
+  .intro {
+    letter-spacing: 1.5px;
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-top: 0px;
+    transition: all 250ms ease-in-out;
+  }
 
-	.line-1{
-		font-size: 2rem;
-		color: silver;
-		font-weight: 650;
-		margin-top: 20px;
-		width: 90%;
-		padding-left: 10px;
-	}
-	
-	.line-2{
-		padding-left: 10px;
-		font-size: 1.5rem;
-		color: azure;
-		font-weight: 600;
-		margin-top: 20px;
-		width: 80%;
-	}
-	.container{
-		width: 100%;
-		display: inline-flex;
-		justify-content: space-between;
-		align-items: left;
-	}
-	.image{
-		float: right;
-		align-items: center;
-    	justify-content: right;
-    	padding-top: 20px;
-		padding-right: 90px;
-		transition: 250ms ease-in-out;
-	}
-	.text{
-		float: left;
-		justify-content: center;
-		align-items: center;
-    	width: 100%;
-		transition: 250ms ease-in-out;
-	}
+  .line-1 {
+    font-size: 2rem;
+    color: silver;
+    font-weight: 650;
+    margin-top: 20px;
+    width: 90%;
+    padding-left: 10px;
+  }
 
-	@media (max-width: 600px) {
-		main {
-			margin: 0.5rem;
-			padding: 0.5rem;
-			max-width: 100vh;
-			max-height: 100vh;
-			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-		}
-		p {
-			font-size: 1rem;
-			color: darkgray;
-			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-			font-weight: 525;
-			margin-bottom: 0px;
-		}
-		.intro{
-			letter-spacing: 1.5px;
-			font-size: 1.2rem;
-		}
-		h1{
-			font-size: 2.5rem;
-			margin-top: 0px;
-		}
+  .line-2 {
+    padding-left: 10px;
+    font-size: 1.5rem;
+    color: azure;
+    font-weight: 600;
+    margin-top: 20px;
+    width: 80%;
+  }
+  .container {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: left;
+  }
+  .image {
+    float: right;
+    align-items: center;
+    justify-content: right;
+    padding-top: 20px;
+    padding-right: 90px;
+    transition: 250ms ease-in-out;
 
-		.para{
-			font-size: 2.5rem;
-			color: darkgray;
-			font-weight: 700;
-			margin-top: 20px;
-			width: 80%;
-		}
-	}
+	animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
 
+  @keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+  .text {
+    float: left;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: 250ms ease-in-out;
+  }
+
+  @media (max-width: 700px) {
+    main {
+      margin: 0.5rem;
+      padding: 0.5rem;
+      max-width: 100vh;
+      max-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+    p {
+      font-size: 1rem;
+      color: darkgray;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      font-weight: 525;
+      margin-bottom: 0px;
+    }
+    .intro {
+      letter-spacing: 1.5px;
+      font-size: 1.2rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 0px;
+    }
+
+    .para {
+      font-size: 2.5rem;
+      color: darkgray;
+      font-weight: 700;
+      margin-top: 20px;
+      width: 80%;
+    }
+    .container {
+      display: block;
+    }
+    .text {
+      width: 100%;
+      padding-right: 0;
+      float: none;
+      text-align: left;
+    }
+    .image {
+      padding: 30px;
+	  padding-top: 5 0px;
+      float: none;
+      justify-content: space-between;
+    }
+    img {
+      width: 300px;
+    }
+  }
 </style>
