@@ -1,16 +1,16 @@
 ---
 layout: ../../layouts/proj-layout.astro
-title: 'Portfolio with Astro'
-pubDate: 2023-04-21
-description: 'The current website fully developed with Astro'
-tags: ["html","project","css","astro","portfolio","sceptix"]
-link: 'https://www.github.com/pranavvraja/portfolio-astro'
-status: 'Ongoing'
+title: 'FOSS Website'
+pubDate: 2023-02-22
+description: 'A single page website on FOSS developed as a team for recruitment of The sceptix club.'
+tags: ["html","project","css","js","foss","sceptix"]
+link: 'https://www.github.com/pranavvraja/sceptix-repository'
+status: 'Completed'
 ---
 
 
 
-<h3>Technologies used:</h3>
-<img src="/astro-icon-light.svg" width=35px padding=3px>
+<h3>Languages used:</h3>
 <img src="/html.png" width=45px>
 <img src="/css.png" width=45px>
+<img src="/js.png" width=45px>
