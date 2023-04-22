@@ -1,6 +1,6 @@
 # Portfolio with Astro
 
-Hosted on Netlify: https://astro-portfolio-r474.netlify.app/
+Hosted on Vercel: https://portfolio-astro-pranavvraja.vercel.app/
 
 ## Screenshots:
 
