@@ -6,10 +6,17 @@ const title = 'Pranavv Raja';
 
 <Layout title={title}>
 	<main>
+		<div class="container">
+		<div class="text">
 		<p>Welcome, this is </p>
 		<h1>{title}</h1>
 		<p class="line-1">Computer Science Student.</p>
 		<p class="line-2">Front End Web Developer.</p>
+		</div>
+		<div class="image">
+		<img src="/pic1.png" width="400px">
+		</div>
+		</div>
 	</main>
 </Layout>
 
@@ -17,7 +24,7 @@ const title = 'Pranavv Raja';
 	main {
 		margin: 0rem 1rem;
 		padding: 30px 50px;
-		max-width: 100vh;
+		max-height: 100vh;
 
 		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	}
@@ -56,6 +63,27 @@ const title = 'Pranavv Raja';
 		font-weight: 600;
 		margin-top: 20px;
 		width: 80%;
+	}
+	.container{
+		width: 100%;
+		display: inline-flex;
+		justify-content: space-between;
+		align-items: left;
+	}
+	.image{
+		float: right;
+		align-items: center;
+    	justify-content: right;
+    	padding-top: 20px;
+		padding-right: 90px;
+		transition: 250ms ease-in-out;
+	}
+	.text{
+		float: left;
+		justify-content: center;
+		align-items: center;
+    	width: 100%;
+		transition: 250ms ease-in-out;
 	}
 
 	@media (max-width: 600px) {
