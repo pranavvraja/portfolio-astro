@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Social from "../components/social.astro";
 
 const title = "Contact Me";
+const user = "pranavvraja";
 ---
 
 <Layout title={title}>
@@ -20,21 +21,21 @@ const title = "Contact Me";
             >
           </li>
           <li>
-            <Social platform="Github" username="pranavvraja">
+            <Social platform="Github" username={user}>
               <img src="/Github.png" class="logo" />
               <span> Check out my repositories on <b>GitHub</b>.</span>
             </Social>
           </li>
 
           <li>
-            <Social platform="LinkedIn" username="pranavvraja">
+            <Social platform="LinkedIn" username="in/pranavvraja">
               <img src="/linkedin.png" class="logo" /><span>
                 View my <b>LinkedIn</b> profile.</span
               >
             </Social>
           </li>
           <li>
-            <Social platform="Twitter" username="pranavvraja">
+            <Social platform="Twitter" username={user}>
               <img src="/twitter.png" class="logo" /><span>
                 Follow me on <b>Twitter</b>.</span
               >

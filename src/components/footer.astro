@@ -1,5 +1,7 @@
 ---
 import Social from "./social.astro";
+
+const user = "pranavvraja";
 ---
 
 <footer>
@@ -12,13 +14,13 @@ import Social from "./social.astro";
     </div>
 
     <div class="soc">
-      <Social platform="Github" username="pranavvraja">
+      <Social platform="Github" username={user}>
         <img src="/Github.png" class="logo" />
       </Social>
-      <Social platform="LinkedIn" username="pranavvraja">
+      <Social platform="LinkedIn" username="in/pranavvraja">
         <img src="/linkedin.png" class="logo" />
       </Social>
-      <Social platform="Twitter" username="pranavvraja">
+      <Social platform="Twitter" username={user}>
         <img src="/twitter.png" class="logo" />
       </Social>
     </div>
