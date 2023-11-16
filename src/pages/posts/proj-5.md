@@ -1,4 +1,4 @@
-<!-- ---
+---
 layout: ../../layouts/proj-layout.astro
 title: 'FOSS Website To Astro'
 pubYear: 2022
@@ -12,6 +12,6 @@ status: 'Ongoing'
 
 
 <h3>Technologies used:</h3>
-<img src="/astro-icon-light.svg" width=45px>
+<img src="/astro-icon-light.svg" width=45px> 
 <img src="/html.png" width=45px>
-<img src="/css.png" width=45px> -->
+<img src="/css.png" width=45px>
