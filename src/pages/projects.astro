@@ -1,35 +1,40 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import ProjLayout from '../layouts/proj-layout.astro';
-const title = 'Projects'
-const items = await Astro.glob('../pages/posts/*.md');
+import Layout from "../layouts/Layout.astro";
+import ProjLayout from "../layouts/proj-layout.astro";
+const title = "Projects";
+import projects from "../data/projects.json";
+const items = await Astro.glob("../pages/posts/*.md");
+items.sort(
+  (a, b) =>
+    Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate)
+);
+
+const project = await Astro.glob("../data/projects.json");
 ---
 
 <Layout title={title}>
-	<main>
-		<h1>{title}</h1>
-		<p>A list of projects that I have done so far.</p>
-		{items.map(item => (
-			<item.Content />
-		))}
-	</main>
+  <main>
+    <h1>{title}</h1>
+    <p>A list of projects that I have done so far.</p>
+    {items.map((item) => <item.Content />)}
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: 1rem;
-		padding: 20px 50px;
-	}
-	p{
-		color: azure;
-		font-size: large;
-		font-weight: 550;
-		padding: 0px 20px;
-	}
-	
-	@media (max-width: 600px) {
-		main {
-			padding: 20px 10px;
-		}
-	}
+  main {
+    margin: 1rem;
+    padding: 20px 50px;
+  }
+  p {
+    color: azure;
+    font-size: large;
+    font-weight: 550;
+    padding: 0px 20px;
+  }
+
+  @media (max-width: 600px) {
+    main {
+      padding: 20px 10px;
+    }
+  }
 </style>
