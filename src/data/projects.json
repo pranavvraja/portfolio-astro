@@ -1,0 +1,12 @@
+{
+  "projects": [
+    {
+      "title": "Campus Virtual Tour",
+      "description": "'A one stop platform for finding details about various colleges in India.",
+      "languages": ["html", "css"],
+      "image": "",
+      "github": "https://www.github.com/pranavvraja/Campus-Virtual-Tour",
+      "demo": ""
+    }
+  ]
+}
