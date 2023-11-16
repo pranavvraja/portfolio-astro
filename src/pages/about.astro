@@ -10,19 +10,46 @@ const title = "About";
       <div class="text">
         <h1>Hello There!</h1>
         <p>
-          I'm Pranavv, pursuing engineering in the branch of <b>Computer Science(Data Science)</b> at <a href="https://www.sjec.ac.in">SJEC.</a>
+          I'm Pranavv, pursuing engineering in the branch of <b
+            >Computer Science(Data Science)</b
+          > at <a href="https://www.sjec.ac.in">SJEC.</a>
         </p>
         <p>
           I'm still in my learning phase and would love to explore and implement
           new technologies in my projects.
           <br />
-          I'm familiar with <b>HTML, CSS, C++, Java, Git</b> and <b>Github</b>.
-          I'm currently learning <b>Astro</b> and <b>JavaScript</b>.
+          <!-- I'm familiar with <b
+            >HTML, CSS, C++, Java, Git, Github, React and MongoDB</b
+          >.
+          <br /> -->
+          Languages I'm familiar with are
+          <br />
+          <div class="lang-imgs">
+            <div class="lang-imgs-row">
+              <img src="/react.svg" alt="React" />
+              <img src="/html.png" alt="HTML" />
+              <img src="/css.png" alt="CSS" />
+              <img src="/js.png" alt="JavaScript" />
+              <img src="/git.svg" alt="Git" />
+              <img src="/Github.png" alt="Github" />
+            </div>
+            <div class="lang-imgs-row">
+              <img src="/tailwind1.svg" alt="Tailwind" />
+              <img src="/firebase.svg" alt="Firebase" />
+              <img src="/mongodb.svg" alt="MongoDB" />
+              <img src="/astro-icon-light.svg" alt="Astro" />
+              <img src="/node.svg" alt="Node" />
+              <img src="/c++.png" alt="C++" />
+            </div>
+          </div>
+          <br />
+          <!-- I'm currently learning <b>Astro</b> and
+          <b>JavaScript</b>. -->
         </p>
       </div>
-      <div class="image">
-        <img src="/picofme.png" alt="Pranavv" />
-      </div>
+    </div>
+    <div class="image">
+      <img src="/picofme.png" alt="Pranavv" />
     </div>
   </main>
 </Layout>
@@ -39,7 +66,7 @@ const title = "About";
     color: silver;
     font-weight: 550;
     transition: 250ms;
-	padding-left:10px;
+    padding-left: 10px;
   }
   b {
     color: white;
@@ -50,6 +77,29 @@ const title = "About";
   img {
     width: 330px;
   }
+
+  .lang-imgs {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    width: 150px;
+    /* bottom: 0%; */
+    /* margin-top: 30px; */
+  }
+
+  .lang-imgs-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    margin: 10px 0px;
+  }
+
+  .lang-imgs img {
+    width: 70px;
+    height: 70px;
+    margin-right: 40px;
+  }
+
   .container {
     display: inline-flex;
     align-items: left;
@@ -58,53 +108,68 @@ const title = "About";
   .text {
     padding-right: 20px;
     text-align: justify;
-    width: 40%;
+    width: 70%;
     float: left;
-	transition: 250ms ease-in-out;
+    transition: 250ms ease-in-out;
   }
   .image {
     float: right;
     justify-content: right;
     padding-top: 60px;
     padding-right: 100px;
-	transition: 250ms ease-in-out;
-  
+    transition: 250ms ease-in-out;
   }
-  a{
-    color: #0E8388;
+  a {
+    color: #0e8388;
     text-decoration: none;
     transition: 250ms;
   }
 
   @media (max-width: 810px) {
-	main{
-		padding: 20px 20px;
-	}
-	.container {
-	  display: block;
-	}
-	.text {
-	  width: 100%;
-	  padding-right: 0;
-	  float: none;
-	  text-align:left;
-	}
-	.image {
-	  padding-top: 40px;
-	  float: none;
-	  padding-left: 50px;
-	  justify-content:space-between;
-	}
-	img {
-	  width: 200px;
+    main {
+      padding: 5px;
+    }
+    .container {
+      display: block;
+    }
+    .text {
+      width: 100%;
+      padding-right: 0;
+      float: none;
+      text-align: left;
+    }
+    .image {
+      padding-top: 50px;
+      /* float: none; */
+      margin-left: 60px;
+      /* display: flex; */
+      justify-content: space-between;
+    }
+    img {
+      width: 200px;
+    }
+    p {
+      line-height: 25px;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    h1 {
+      font-size: 2.3rem;
+    }
+
+    .lang-imgs {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .lang-imgs-row {
+      justify-content: space-between;
+    }
+
+    .lang-imgs-row img {
+      width: 40px;
+      height: 40px;
+      margin-right: 15px;
+    }
   }
-  p{
-	line-height: 25px;
-	font-size: 1rem;
-	font-weight:500;
-  }
-  h1{
-	font-size: 2.3rem;
-  }
-}
 </style>
