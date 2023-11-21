@@ -6,6 +6,7 @@ description: "A budget tracker aimed at helping students manage their finances"
 tags: ["web-dev", "project", "tailwindcss", "js", "react", "sceptix", "club"]
 link: "https://www.github.com/pranavvraja/stud-budget"
 status: "Ongoing"
+image: "/stud-budget-ss.png"
 ---
 
 <h3>Technologies used:</h3>

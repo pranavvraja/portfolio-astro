@@ -5,7 +5,9 @@ pubDate: 2023-07-19
 description: "Worked on the official website of The sceptix club, SJEC Mangalore"
 tags: ["html", "project", "css", "js", "react", "sceptix", "club"]
 link: "https://www.github.com/pranavvraja/sceptix-website"
+website: "https://sceptix-website.vercel.app/"
 status: "Ongoing"
+image: "/sceptix-ss.png"
 ---
 
 <h3>Technologies used:</h3>

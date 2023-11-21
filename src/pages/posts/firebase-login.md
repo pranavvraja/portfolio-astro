@@ -6,6 +6,7 @@ description: "Created a simple React-Firebase Signup and Login page"
 tags: ["firebase", "project", "tailwindcss", "js", "react", "sceptix", "club"]
 link: "https://www.github.com/pranavvraja/react-login"
 status: "Completed"
+image: "/react-login-ss.png"
 ---
 
 <h3>Technologies used:</h3>

@@ -5,7 +5,9 @@ pubDate: 2023-04-21
 description: "The current website fully developed with Astro"
 tags: ["html", "project", "css", "astro", "portfolio", "sceptix"]
 link: "https://www.github.com/pranavvraja/portfolio-astro"
+website: "https://portfolio-astro-pranavvraja.vercel.app/"
 status: "Completed"
+image: "/portfolio-ss.png"
 ---
 
 <h3>Technologies used:</h3>
