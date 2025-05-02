@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: ../../layouts/proj-layout.astro
 title: "Attendance Tracker"
 pubDate: 2023-11-06
@@ -9,6 +9,6 @@ status: "Ongoing"
 ---
 
 <h3>Technologies used:</h3>
-<img src="/react.svg" width=45px> 
+<img src="/react.svg" width=45px>
 <img src="/tailwind1.svg" width=45px>
-<!-- <img src="/firebase.svg" width=45px> -->
+<img src="/firebase.svg" width=45px> -->
